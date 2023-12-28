@@ -63,7 +63,7 @@ const uniqueTitles = Array.from(new Set(prevChats.map(prevChat => prevChat.title
   return (
     <div className="app">
       <section className="side-bar">
-        <button onClick={createNewChat}>✚ New chat</button>
+        <button onClick={createNewChat}>✚ Start New Chat</button>
         <ul className="history">
           {uniqueTitles?.map((uniqueTitle, index) => <li key={index} onClick={() => handleClick(uniqueTitle)}>{uniqueTitle}</li>)}
         </ul>
